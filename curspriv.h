@@ -121,7 +121,7 @@ size_t  PDC_wcstombs(char *, const wchar_t *, size_t);
 PDCEX int PDC_wcwidth( const int32_t ucs);
 #endif
 
-#define MAX_UNICODE 0x110000
+#define MAX_UNICODE 0x10ffff
 
 #ifdef PDCDEBUG
 # define PDC_LOG(x) if (SP && SP->dbfp) PDC_debug x
