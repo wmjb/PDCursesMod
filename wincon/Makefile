@@ -63,6 +63,9 @@ ifndef ON_WINDOWS
 	ifdef _a64
 		PREFIX  = aarch64-w64-mingw32-
 	endif
+	ifdef _a32
+		PREFIX  = armv7-w64-mingw32-
+	endif
 endif
 
 PDCURSES_WIN_H	= $(osdir)/pdcwin.h
